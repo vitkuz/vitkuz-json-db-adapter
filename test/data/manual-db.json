@@ -1,0 +1,56 @@
+{
+    "users": {
+        "user_1": {
+            "id": "user_1",
+            "name": "Alice",
+            "email": "alice@example.com",
+            "role": "admin"
+        },
+        "user_2": {
+            "id": "user_2",
+            "name": "Bob",
+            "email": "bob@example.com",
+            "role": "user"
+        },
+        "user_3": {
+            "id": "user_3",
+            "name": "Charlie",
+            "email": "charlie@example.com",
+            "role": "editor"
+        }
+    },
+    "books": {
+        "book_1": {
+            "id": "book_1",
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "categoryId": "cat_1"
+        },
+        "book_2": {
+            "id": "book_2",
+            "title": "1984",
+            "author": "George Orwell",
+            "categoryId": "cat_2"
+        },
+        "book_3": {
+            "id": "book_3",
+            "title": "The Hobbit",
+            "author": "J.R.R. Tolkien",
+            "categoryId": "cat_3"
+        }
+    },
+    "categories": {
+        "cat_1": {
+            "id": "cat_1",
+            "name": "Classic Literature"
+        },
+        "cat_2": {
+            "id": "cat_2",
+            "name": "Dystopian Fiction"
+        },
+        "cat_3": {
+            "id": "cat_3",
+            "name": "Fantasy"
+        }
+    }
+}

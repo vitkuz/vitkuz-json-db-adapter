@@ -1,0 +1,59 @@
+{
+    "name": "@vitkuz/vitkuz-json-db-adapter",
+    "version": "1.1.0",
+    "description": "",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "pub": "npm publish --access public",
+        "build": "tsup",
+        "dev": "tsup --watch",
+        "prepublishOnly": "npm run format && npm run build",
+        "test": "npm run test:push && npm run test:get && npm run test:delete && npm run test:list && npm run test:reload && npm run test:batch:push && npm run test:batch:get && npm run test:batch:delete",
+        "test:push": "tsx test/push-data.test.ts",
+        "test:get": "tsx test/get-data.test.ts",
+        "test:delete": "tsx test/delete-data.test.ts",
+        "test:list": "tsx test/list-data.test.ts",
+        "test:reload": "tsx test/reload-db.test.ts",
+        "test:manual": "tsx test/create-manual-data.test.ts",
+        "test:batch:push": "tsx test/batch-push.test.ts",
+        "test:batch:get": "tsx test/batch-get.test.ts",
+        "test:batch:delete": "tsx test/batch-delete.test.ts",
+        "test:behaviors": "tsx test/behaviors.test.ts",
+        "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\""
+    },
+    "keywords": [],
+    "author": "Vitali Kuzmenka",
+    "license": "ISC",
+    "type": "commonjs",
+    "dependencies": {
+        "node-json-db": "^2.4.2"
+    },
+    "devDependencies": {
+        "@types/node": "^25.0.3",
+        "prettier": "^3.7.4",
+        "rimraf": "^6.1.2",
+        "tsup": "^8.5.1",
+        "tsx": "^4.21.0",
+        "typescript": "^5.9.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vitkuz/vitkuz-json-db-adapter.git"
+    },
+    "bugs": {
+        "url": "https://github.com/vitkuz/vitkuz-json-db-adapter/issues"
+    },
+    "homepage": "https://github.com/vitkuz/vitkuz-json-db-adapter#readme"
+}

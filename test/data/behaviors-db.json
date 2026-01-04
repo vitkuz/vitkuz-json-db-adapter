@@ -1,0 +1,19 @@
+{
+    "user": {
+        "name": "Bob"
+    },
+    "config": {
+        "theme": "light",
+        "notifications": true,
+        "version": 1
+    },
+    "tags": [
+        "red",
+        "green",
+        "blue"
+    ],
+    "items": {
+        "2": "B",
+        "3": "C"
+    }
+}
